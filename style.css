@@ -71,7 +71,7 @@ header {
     }
 
     .nav-links {
-        gap: 15px;
+        gap: 20px;
     }
 
     .nav-links a {
@@ -340,6 +340,9 @@ button:hover {
     .content-2 h2 {
         font-size: 16px;
     }
+    .link{
+        margin-bottom: 20px;
+    }
 
     .image {
         width: 250px;
@@ -421,6 +424,9 @@ button:hover {
         align-items: center;
         padding: 10px;
         height: auto;
+    }
+    
+    .content-left{
         margin-top: 20px;
     }
 
