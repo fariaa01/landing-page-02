@@ -68,12 +68,12 @@ header {
     .logo img {
         width: 75px;
         margin-left: 0px;
+        margin-top: 30px;
     }
 
     .nav-links {
         display: flex;
         gap: 20px;
-        align-items: center;
     }
 
     .nav-links a {
