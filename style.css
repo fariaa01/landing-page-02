@@ -121,11 +121,11 @@ form {
 }
 
 input[type="text"] {
-    padding: 12px; /* Aumentando o espaçamento interno */
-    font-size: 18px; /* Aumentando o tamanho da fonte */
-    height: 60px; /* Aumentando a altura */
-    width: 400px; /* Aumentando a largura */
-    max-width: 100%; /* Permitindo responsividade */
+    padding: 12px;
+    font-size: 18px; 
+    height: 60px;
+    width: 700px;
+    max-width: 100%;
     border: 1px solid hsl(238, 22%, 44%);
     border-radius: 4px;
 }
@@ -134,12 +134,14 @@ button {
     padding: 8px 16px;
     font-size: 16px;
     background-color: #007bff;
-    width: 300px;
+    width: 70%;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
+
+
 
 button:hover {
     background-color: #0056b3;
@@ -237,13 +239,18 @@ button:hover {
     }
 
     input[type="text"] {
-        height: 40px;
-        width: 80%;
+        height: 45px; 
+        width: 100%;
+        max-width: 600px;
+        font-size: 20px; 
+        margin-bottom: 10px;
     }
 
     button {
-        max-width: 200px;
+        height:45px;
         width: 100%;
+        max-width: 600px; 
+        font-size: 20px;
     }
 
     .right-side img {
@@ -293,6 +300,12 @@ button:hover {
     width: 400px;
     height: 400px; 
     margin-left: 20px;
+}
+
+.link{
+    color: green;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 /* RESPONSIVIDADE ITEM 2 */
@@ -391,25 +404,33 @@ button:hover {
     margin-right: 70px;
 }
 
+.input-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-right: 70px;
+}
 .content-right input[type="text"] {
     padding: 12px;
     font-size: 18px; 
     height: 60px;
     margin-bottom: 20px;
-    width: 400px; 
+    width: 700px; 
     max-width: 100%; 
     border: 1px solid hsl(238, 22%, 44%);
     border-radius: 4px;
 }
 .button-2 {
-    padding: 10px 200px;
+    padding: 8px 16px;
+    font-size: 16px;
     background-color: #007bff;
+    width: 80%;
+    height: 50px;
     color: white;
-    width: 300px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 20px
 }
 
 .button-2:hover {
@@ -423,8 +444,9 @@ button:hover {
 @media (max-width: 768px) {
     .container-3 {
         flex-direction: column;
+        display: flex;
         align-items: center;
-        padding: 10px;
+        justify-content: center;
         height: auto;
     }
     
@@ -440,28 +462,34 @@ button:hover {
 
     .content-right {
         margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
     }
 
-    .content-right input {
-        width: 80%;
-        max-width: 100%;
-        margin: 0 auto;
+    .input-text input[type="text"] {
+        height: 50px;
+        width: 200%;
+        max-width: 600px; 
+        font-size: 20px;
         margin-bottom: 10px;
+        margin-right: 65px;
     }
 
     .button-2 {
-        width: 80%;
-        max-width: 300px;
-        padding: 10px;
-        margin: 0 auto;
-        margin-bottom: 20px;
+        height:45px;
+        width: 200%;
+        max-width: 600px;
+        font-size: 20px;
+        margin-right: 65px;
+        margin-bottom: 10px;
     }
 }
 
 
-
 footer {
-    background-color: #f4f4f4;
+    background-color: #e7e9ef;
     padding: 20px 0;
   }
   
@@ -476,7 +504,8 @@ footer {
   .logo-contact {
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
+    margin-left: 100px;
+    font-size: 18px;
   }
   
   .logo {
@@ -487,21 +516,42 @@ footer {
   
   .footer-links {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    gap: 70px;
     font-size: 22px;
-  }
-  
-  .link-column {
+    text-decoration: none;
+}
+
+.link-column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .link-column a {
-    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-column-2{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.link-colum-3{
+    display: flex;
+    flex-direction: column;
+}
+
+.aa{
+    margin-top: 30px;
+}
+
+
+.link-column a , .link-colum-3 a, .link-column-2 a , .aa {
+    display: block;
+    margin-bottom: 5px;
     text-decoration: none;
     color: #333;
-  }
+}
+
   
   .link-column a:hover {
     color: #007BFF;
@@ -509,33 +559,33 @@ footer {
   
   .social-icons {
     display: flex;
-    gap: 20px; /* Espaçamento entre os ícones sociais */
-    margin-right: 200px;
+    justify-content: space-between;
+    gap: 50px;
+    margin-right: 160px;
   }
   
   .social-icons a {
     color: #333;
-    font-size: 1.5em;
+    font-size: 30px;
   }
   
   .social-icons a:hover {
     color: #007BFF;
   }
   
-  /* Adiciona ícones ao lado dos textos de email e telefone */
+ 
   .logo-contact p i {
     margin-right: 8px;
   }
   
-  /* Media Queries para Responsividade */
   @media (max-width: 1200px) {
     .footer-container {
-      flex-direction: column; /* Empilha os elementos verticalmente */
-      margin-top: 50px; /* Reduz a margem superior em telas menores */
+      flex-direction: column;
+      margin-top: 50px; 
     }
   
     .logo-contact {
-      margin-left: 0; /* Remove a margem à esquerda */
+      margin-left: 0;
     }
 
     .logo{
@@ -543,26 +593,28 @@ footer {
     }
   
     .footer-links {
-      flex-direction: column; /* Alinha os links em coluna */
-      gap: 30px; /* Reduz o espaço entre os links */
+      flex-direction: column;
+      gap: 30px;
       align-items: flex-start;
-      font-size: 18px; /* Reduz o tamanho da fonte */
-      margin: 20px 0; /* Adiciona margem acima e abaixo */
+      font-size: 18px;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
   
     .social-icons {
-      margin-right: 0; /* Remove a margem à direita */
-      margin-top: 20px; /* Adiciona margem acima */
+      margin-right: 0;
+      margin-top: 20px;
       align-items: center;
     }
   }
   
   @media (max-width: 768px) {
     .footer-links {
-      font-size: 16px; /* Reduz ainda mais o tamanho da fonte */
+      font-size: 16px;
     }
   
     .social-icons a {
-      font-size: 1.2em; /* Diminui o tamanho dos ícones */
+      font-size: 1.2em;
     }
-  }
+  } 
