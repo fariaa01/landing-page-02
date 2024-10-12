@@ -440,7 +440,79 @@ button:hover {
 
 /*RESPONSIVIDADE CONTAINER 3 */
 
+@media (min-width: 1024px) {
+    .container-3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        height: 30vh;
+        align-items: center;
+        background-color: hsl(239, 54%, 68%);
+        flex-wrap: wrap;
+    }
 
+    .content-left {
+        flex: 1;
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    .content-left h1 {
+        font-size: 36px;
+        color: hsl(0, 0%, 100%);
+        margin-bottom: 20px;
+    }
+
+    .content-left h2 {
+        font-size: 22px;
+        color: hsl(0, 0%, 100%);
+        width: 100%;
+    }
+
+    .content-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 140px;
+        margin-right: 70px;
+    }
+
+    .input-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 140px;
+        margin-right: 70px;
+    }
+
+    .content-right input[type="text"] {
+        padding: 12px;
+        font-size: 18px;
+        height: 60px;
+        margin-bottom: 20px;
+        width: 700px;
+        max-width: 100%;
+        border: 1px solid hsl(238, 22%, 44%);
+        border-radius: 4px;
+    }
+
+    .button-2 {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #007bff;
+        width: 80%;
+        height: 50px;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button-2:hover {
+        background-color: #0056b3;
+    }
+}
 @media (max-width: 768px) {
     .container-3 {
         flex-direction: column;
